@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tailwind CSS - Lnading Page</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/jquery.beefup.css" />
+		<!-- For developmet -->
+		<!-- <link rel="stylesheet" href="../dist/style.css" /> -->
+
+		<!-- For production -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="container flex items-center py-4 mt-4 sm:mt-12">
+				<div class="py-1">
+					<img src="img/logo-bookmark.svg" alt="" />
+				</div>
+				<nav class="hidden sm:block flex-1 text-bookmark-blue uppercase text-xs menu">
+					<ul
+						class="flex flex-col sm:flex-row gap-4 sm:gap-12 sm:items-center text-white sm:text-inherit sm:justify-end"
+					>
+						<li class="cursor-pointer">Feature</li>
+						<li class="cursor-pointer">Pricing</li>
+						<li class="cursor-pointer">Contact</li>
+						<button class="btn btn-red">Login</button>
+					</ul>
+				</nav>
+
+				<div class="flex-1 flex sm:hidden justify-end">
+					<i class="text-2xl fas fa-bars p-2 mobile-menu cursor-pointer"></i>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Hero section -->
+		<section class="relative">
+			<div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-12 lg:mt-28">
+				<!-- content -->
+				<div class="flex-1 flex flex-col items-center lg:items-start">
+					<h2 class="text-bookmark-blue text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6">
+						A Simple Bookmark Manager
+					</h2>
+					<p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
+						A clean and simple interface to organize your favourite websites. Open a new browser tab and see
+						your sites load instantly. Try it for free.
+					</p>
+
+					<div class="flex wrap gap-6">
+						<button class="btn btn-purple hover:bg-bookmark-white hover:text-black">
+							Get it on Chrome
+						</button>
+						<button class="btn btn-white hover:bg-bookmark-purple hover:text-white">
+							Get it on Firebox
+						</button>
+					</div>
+				</div>
+
+				<!-- image -->
+				<div class="flex justify-center flex-1 mb-10 md:mb-6 lg:mb-0 z-10">
+					<img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="img/hero-bg.png" alt="" />
+				</div>
+			</div>
+
+			<!-- Rounded rectangle -->
+			<div
+				class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-5/12 right-0 -bottom-20"
+			></div>
+		</section>
+		<!-- Featute  -->
+		<section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+			<!-- Heading -->
+			<div class="sm:w-3/4 lg:w-5/12 mx-auto px-2 text-center">
+				<h1 class="text-3xl text-bookmark-blue">Features</h1>
+				<p class="text-bookmark-grey mt-4">
+					Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+					control over how you manage your favourite sites.
+				</p>
+			</div>
+
+			<!-- Feature 1 -->
+			<div class="relative mt-20 lg:mt-24">
+				<div class="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-x-24">
+					<!-- image -->
+					<div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+						<img
+							class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+							src="img/illustration-features-tab-1.png"
+							alt=""
+						/>
+					</div>
+					<!-- content -->
+					<div class="flex flex-1 flex-col items-center lg:items-start">
+						<h2 class="text-3xl text-bookmark-blue">Bookmark in one click</h2>
+						<p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+							Organize your bookmarks however you like. Our simple drag-and-drop interface gives you
+							complete control over how you manage your favourite sites.
+						</p>
+						<button class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+					</div>
+				</div>
+
+				<!-- Rounded rectangle -->
+				<div
+					class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-5/12 left-0 -bottom-20"
+				></div>
+			</div>
+
+			<!-- Feature 2 -->
+			<div class="relative mt-20 lg:mt-52">
+				<div class="container mx-auto flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+					<!-- image -->
+					<div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+						<img
+							class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+							src="img/illustration-features-tab-2.png"
+							alt=""
+						/>
+					</div>
+					<!-- content -->
+					<div class="flex flex-1 flex-col items-center lg:items-start">
+						<h2 class="text-3xl text-bookmark-blue">Intelligent search</h2>
+						<p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+							Our powerful search feature will help you find saved sites in no time at all. No need to
+							crawl through all of your bookmarks.
+						</p>
+						<button class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+					</div>
+				</div>
+
+				<!-- Rounded rectangle -->
+				<div
+					class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-5/12 right-0 -bottom-20"
+				></div>
+			</div>
+
+			<!-- Feature 3 -->
+			<div class="relative mt-20 lg:mt-52">
+				<div class="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-x-24">
+					<!-- image -->
+					<div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+						<img
+							class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+							src="img/illustration-features-tab-3.png"
+							alt=""
+						/>
+					</div>
+					<!-- content -->
+					<div class="flex flex-1 flex-col items-center lg:items-start">
+						<h2 class="text-3xl text-bookmark-blue">Share your bookmarks</h2>
+						<p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+							Easily share your bookmarks and collections with others. Create a shareable link that you
+							can send at the click of a button.
+						</p>
+						<button class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+					</div>
+				</div>
+
+				<!-- Rounded rectangle -->
+				<div
+					class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-5/12 left-0 -bottom-20"
+				></div>
+			</div>
+		</section>
+
+		<!-- Download  -->
+
+		<section class="py-20 mt-20">
+			<!-- Heading -->
+			<div class="sm:w-3/4 lg:w-5/12 mx-auto px-2 text-center">
+				<h1 class="text-3xl text-bookmark-blue">Download the extension</h1>
+				<p class="text-bookmark-grey mt-4">
+					We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like
+					us to prioritize.
+				</p>
+			</div>
+
+			<!-- Body -->
+			<div class="grid container grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+				<!-- card 1  -->
+				<div class="flex flex-col rounded-md shadow-md lg:mb-16">
+					<div class="p-6 flex flex-col items-center">
+						<img src="img/logo-chrome.svg" alt="" />
+						<h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
+						<p class="mb-2 text-bookmark-grey">Minimum version 62</p>
+					</div>
+					<hr class="border-b border-bookmark-white" />
+					<div class="p-6">
+						<button class="btn btn-purple w-full hover:bg-bookmark-white hover:text-black">
+							Add & Install Extension
+						</button>
+					</div>
+				</div>
+				<!-- card 2  -->
+				<div class="flex flex-col rounded-md shadow-md lg:my-8">
+					<div class="p-6 flex flex-col items-center">
+						<img src="img/logo-firefox.svg" alt="" />
+						<h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
+						<p class="mb-2 text-bookmark-grey">Minimum version 62</p>
+					</div>
+					<hr class="border-b border-bookmark-white" />
+					<div class="p-6">
+						<button class="btn btn-purple w-full hover:bg-bookmark-white hover:text-black">
+							Add & Install Extension
+						</button>
+					</div>
+				</div>
+				<!-- card 3  -->
+				<div class="flex flex-col rounded-md shadow-md lg:mt-16">
+					<div class="p-6 flex flex-col items-center">
+						<img src="img/logo-opera.svg" alt="" />
+						<h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
+						<p class="mb-2 text-bookmark-grey">Minimum version 62</p>
+					</div>
+					<hr class="border-b border-bookmark-white" />
+					<div class="p-6">
+						<button class="btn btn-purple w-full hover:bg-bookmark-white hover:text-black">
+							Add & Install Extension
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section class="py-20 bg-bookmark-white">
+			<div class="container">
+				<!-- Heading -->
+				<div class="sm:w-3/4 lg:w-5/12 mx-auto px-2 text-center">
+					<h1 class="text-3xl text-bookmark-blue">Frequently Asked Questions</h1>
+					<p class="text-bookmark-grey mt-4">
+						Here are some of our FAQs. If you have any other questions you’d like answered please feel free
+						to email us.
+					</p>
+				</div>
+
+				<!-- Body -->
+				<div class="sm:w-3/4 lg:w-5/12 mx-auto mt-12 flex flex-col">
+					<div class="beefup">
+						<h2 class="beefup__head">
+							What is a Bookmark
+							<!-- <i class="fas fa-chevron-down"></i> -->
+						</h2>
+
+						<div class="beefup__body">
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consectetur,
+								itaque quibusdam qui laborum eveniet magnam amet iste culpa unde, atque soluta!
+								Eligendi, repellendus! Totam cumque voluptatibus earum corrupti tempore!
+							</p>
+						</div>
+					</div>
+					<div class="beefup">
+						<h2 class="beefup__head">How can I request a new browser?</h2>
+
+						<div class="beefup__body">
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consectetur,
+								itaque quibusdam qui laborum eveniet magnam amet iste culpa unde, atque soluta!
+								Eligendi, repellendus! Totam cumque voluptatibus earum corrupti tempore!
+							</p>
+						</div>
+					</div>
+					<div class="beefup">
+						<h2 class="beefup__head">Is there a mobile app?</h2>
+
+						<div class="beefup__body">
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consectetur,
+								itaque quibusdam qui laborum eveniet magnam amet iste culpa unde, atque soluta!
+								Eligendi, repellendus! Totam cumque voluptatibus earum corrupti tempore!
+							</p>
+						</div>
+					</div>
+					<div class="beefup">
+						<h2 class="beefup__head">What about other Chromium browsers?</h2>
+
+						<div class="beefup__body">
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consectetur,
+								itaque quibusdam qui laborum eveniet magnam amet iste culpa unde, atque soluta!
+								Eligendi, repellendus! Totam cumque voluptatibus earum corrupti tempore!
+							</p>
+						</div>
+					</div>
+
+					<button class="btn btn-purple self-center mt-12 hover:bg-bookmark-white hover:text-black">
+						More Info
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact us  -->
+		<div class="bg-bookmark-purple py-20">
+			<div class="container">
+				<div class="sm:3/4 lg:w-2/4 mx-auto text-white text-center">
+					<p class="font-light uppercase mb-8">35,000+ ALREADY JOINED</p>
+					<h2 class="text-3xl">Stay up-to-date with what we’re doing</h2>
+					<div class="flex flex-col sm:flex-row gap-6 mt-8">
+						<input
+							type="text"
+							placeholder="Ener your email address"
+							class="flex-1 focus:outline-none px-2 py-3 rounded-md text-black"
+						/>
+						<button class="btn btn-red hover:bg-bookmark-white hover:text-black">Contact Us</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="bg-bookmark-blue py-8">
+			<div class="container flex flex-col md:flex-row items-center">
+				<div class="flex flex-1 flex-wrap justify-center md:justify-start gap-12 items-center">
+					<img src="img/logo-bookmark-white.png" alt="" />
+					<ul class="flex text-white gap-12 text-xs">
+						<li class="cursor-pointer">Features</li>
+						<li class="cursor-pointer">Pricing</li>
+						<li class="cursor-pointer">Contact</li>
+					</ul>
+				</div>
+				<div class="flex gap-10 mt-12 md:mt-0">
+					<span>
+						<i class="text-white text-2xl fab fa-twitter"></i>
+					</span>
+					<span>
+						<i class="text-white text-2xl fab fa-facebook-square"></i>
+					</span>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.beefup.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

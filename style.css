@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@layer base {
+	html,
+	body {
+		@apply font-poppins;
+	}
+}
+
+@layer components {
+	.btn {
+		@apply text-white px-7 py-3 rounded-md uppercase transition shadow-md duration-500;
+	}
+	.btn-red {
+		@apply bg-bookmark-red;
+	}
+	.btn-purple {
+		@apply bg-bookmark-purple;
+	}
+	.btn-white {
+		@apply bg-bookmark-white text-black;
+	}
+}
+
+@layer utilities {
+	.w-500-px {
+		width: 800px;
+	}
+}
