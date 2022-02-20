@@ -1,4 +1,4 @@
-# Modern Landing Page With Tailwind CSS
+# A simple Tailwind CSS landing Page
 
 Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces. It is a highly customizable, low-level CSS framework that gives us all of the building blocks we need to build bespoke designs without any annoying opinionated styles we have to fight to override.
 
